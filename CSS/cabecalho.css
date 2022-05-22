@@ -1,15 +1,11 @@
-main {
-    background: white;
-}
-
 .cabecalho {
-    background: rgb(146, 66, 66);
+    background: rgb(73, 73, 73);
+    border-bottom: 2px solid black;
 }
 
 .container {
     margin: 0 3%;
     position: absolute;
-    z-index: 1;
 }
 
 .lista__navegacao {
@@ -35,25 +31,40 @@ main {
 }
 
 .menuLateral {
-    background: blue;
-    height: 200px;
+    display: block;
+    background: rgb(73, 73, 73);
+    border-left: 1px solid black;
+    height: 100%;
     margin-left: 100%;
+    transition: 0.5s;
     position: absolute;
-    transition: 0.5;
-    width: 45%;
+    overflow-x: hidden;
+    width: 0;
     z-index: 2;
 }
 
-.active {
-    display: block;
-    margin-left: 55%;
-    transition: 0.5;
-    width: 45%;
+.active { 
+    margin-left: 60%;
+    overflow-x: auto;
+    width: 40%;
+}
+
+.titulo__menuLateral {
+    text-align: center;
+}
+
+.texto__menuLateral {
+    padding: 2rem;
 }
 
 .secao1 {
     background: cadetblue;
     height: 100vh;
+    position: absolute;
     width: 100%;
     z-index: 1;
+}
+
+.container p {
+    padding: 1rem;
 }
