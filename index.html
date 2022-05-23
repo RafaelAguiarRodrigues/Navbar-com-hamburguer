@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Testando fazer um menu hamburguer com Javascript">
     <title>Menu Hamburguer</title>
-    <link rel="stylesheet" href="./CSS/reset.css">
-    <link rel="stylesheet" href="./CSS/cabecalho.css">
+    <link rel="stylesheet" href="./ASSETS/CSS/reset.css">
+    <link rel="stylesheet" href="./ASSETS/CSS/cabecalho.css">
+    <link rel="stylesheet" href="./ASSETS/CSS/carrosel.css">
 </head>
+
 <body>
     <header class="cabecalho">
         <nav class="navegacacao">
@@ -16,24 +19,56 @@
                 <li class="lista__navegacao___itens"><a href="" class="lista__navegacao___link">Home</a></li>
                 <li class="lista__navegacao___itens"><a href="" class="lista__navegacao___link">Link</a></li>
                 <li class="lista__navegacao___itens"><a href="" class="lista__navegacao___link">Nosso app</a></li>
-                <li class="lista__navegacao___itens"><a href="" class="lista__navegacao___link">Entre em contato</a></li>
+                <li class="lista__navegacao___itens"><a href="" class="lista__navegacao___link">Entre em contato</a>
+                </li>
                 <li class="lista__navegacao___itens"><a href="" class="lista__navegacao___link">Sobre</a></li>
-                <li class="lista__navegacao___itens"><div class="hamburguer"></a></li>
+                <li class="lista__navegacao___itens">
+                    <div class="hamburguer"></a>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="menuLateral">
             <h2 class="titulo__menuLateral">Teste</h2>
-            <P class="texto__menuLateral">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quis quibusdam natus dolore, iusto cumque distinctio veritatis enim! Officia, tempore. Incidunt repellendus voluptatum molestiae vel quo? Animi officiis alias porro!</P>
+            <P class="texto__menuLateral">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quis
+                quibusdam natus dolore, iusto cumque distinctio veritatis enim! Officia, tempore. Incidunt repellendus
+                voluptatum molestiae vel quo? Animi officiis alias porro!</P>
         </div>
         <section class="secao1">
             <div class="container">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse quia asperiores optio architecto exercitationem voluptatibus, inventore id illum fugiat doloribus porro, pariatur voluptas dolorem praesentium ad atque quas, dolores nesciunt!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse quia asperiores optio architecto
+                    exercitationem voluptatibus, inventore id illum fugiat doloribus porro, pariatur voluptas dolorem
+                    praesentium ad atque quas, dolores nesciunt!</p>
             </div>
         </section>
-        <script src="./JS/main.js"></script>
+        <section class="carrosel">
+            <div class="carousel">
+                <div data-js="carousel__item" class="carousel__item carousel__item--visible">
+                    <img src="./ASSETS/IMG/imagem1.jpg" />
+                </div>
+
+                <div data-js="carousel__item" class="carousel__item">
+                    <img src="./ASSETS/IMG/imagem2.jpg" />
+                </div>
+
+                <div data-js="carousel__item" class="carousel__item">
+                    <img src="./ASSETS/IMG/imagem3.webp" />
+                </div>
+
+                <div class="carousel__actions">
+                    <button data-js="carousel__button--prev" aria-label="Slide anterior">
+                        < </button>
+
+                            <button data-js="carousel__button--next" aria-label="Próximo slide">
+                                >
+                            </button>
+                </div>
+            </div>
+        </section>
     </main>
+    <script src="./ASSETS/JS/main.js"></script>
+    <script src="./ASSETS/JS/carrosel.js"></script>
 </body>
 
 </html>
